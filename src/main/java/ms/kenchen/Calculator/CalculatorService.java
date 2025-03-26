@@ -13,6 +13,8 @@ public class CalculatorService {
     @Path("ping")
     @Produces(MediaType.TEXT_PLAIN)
     public String ping() {
+        System.out.println("⚡ Ping endpoint hit!");
+
         return "Welcome to Java Web App!!! This is updated!\n" + new Date().toString();
     }
 
